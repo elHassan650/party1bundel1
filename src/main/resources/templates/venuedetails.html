@@ -1,0 +1,36 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>artistlist</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+</head>
+<body>
+<div th:replace="fragments/header :: header">Hier komt de header</div>
+<br><br>
+<div class="row1">
+    <div class="row1content">
+        <div class="prevButtonDiv">
+            <a class="smallButton buttonLook"
+               th:href="@{|/venuedetailsbyindex/${prevIndex}|}"><</a>
+        </div>
+        <div class="nextButtonDiv">
+            <a class="smallButton buttonLook"
+               th:href="@{|/venuedetailsbyindex/${nextIndex}|}">></a>
+        </div>
+        <h2 th:if="${venueName}" th:text="|venue: ${venueName}|">venue: onbekend</h2>
+        <p th:unless="${venueName}">venu: onbekend</p>
+
+    </div>
+
+
+
+</div>
+
+
+    <div class="bottom">
+        <p>copyright ThomasMore</p>
+    </div>
+</body>
+</html>

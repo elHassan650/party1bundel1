@@ -1,0 +1,59 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/party.css" />
+</head>
+<body>
+<div>
+    <div class="nav">
+        <h1>Let's Party!</h1>
+        <div class="navbuttons">
+            <a class="buttonLook menuButton" href="/home">home</a>
+            <a class="buttonLook menuButton" href="/venuelist">venues</a>
+            <a class="buttonLook menuButton" href="/artistlist">artists</a>
+            <a class="buttonLook menuButton" href="/partylist">parties</a>
+            <a class="buttonLook menuButton" href="/about">about</a>
+
+            <a class="buttonLook menuButton secbutton" href="/user/login">login</a>
+        </div>
+    </div>
+    <div class="freespaceforheader"></div>
+</div>
+<div class="row1">
+    <div class="row1content">
+        <div>
+            <h2>login</h2>
+            <div class="level1ButtonDiv">
+                <a class="buttonLook smallButton" href="/partylist">back</a>
+            </div>
+            <div class="level2ButtonDiv">
+                <a class="buttonLook smallButton" href="/user/register">register</a>
+            </div>
+        </div>
+        <div>
+            <div th:replace="fragments/header :: login">Hier komt de header</div>
+
+            <form action="/user/login" method="post">
+                <div class="oneinput level3ButtonDiv submitButton">
+                    <input type="submit" value="login" class="smallButton buttonLook">
+                </div>
+                <div class="oneinput">
+                    <label for="username" class="info">Username: </label>
+                    <input type="text" id="username" name="username" class="editfield">
+                </div>
+                <div class="oneinput">
+                    <label for="password" class="info">Password: </label>
+                    <input type="password" id="password" name="password" class="editfield">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <p>copyright ThomasMore</p>
+</div>
+</body>
+</html>xfb fefqVFBR1R4517R441EW
